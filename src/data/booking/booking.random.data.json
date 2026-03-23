@@ -32,7 +32,7 @@
         },
         "seatRequest": {
             "type": "NORMAL",
-            "quantity": 2
+            "quantity": 3
         },
         "bookingCase": "LOGGED_SUCCESS",
         "expectedType": "BOOKING_RANDOM_SUCCESS"

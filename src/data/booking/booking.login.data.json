@@ -12,8 +12,8 @@
             "maLichChieu": 46421
         },
         "seats": [
-            142,
-            143
+            145,
+            146
         ],
         "bookingCase": "LOGGED_SUCCESS",
         "expectedType": "BOOKING_SUCCESS"
@@ -31,8 +31,8 @@
             "maLichChieu": 46421
         },
         "seats": [
-            122,
-            123
+            124,
+            125
         ],
         "bookingCase": "LOGGED_SUCCESS",
         "expectedType": "BOOKING_SUCCESS"
