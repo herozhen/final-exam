@@ -1,0 +1,5 @@
+export const TIMEOUT = {
+    DEFAULT_TIMEOUT: 10,
+    MEDIUM_TIMOUT: 30,
+    LONG_TIMEOUT: 60
+};

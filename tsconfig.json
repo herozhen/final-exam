@@ -1,0 +1,29 @@
+{
+    "compilerOptions": {
+        "target": "ESNext",
+        "module": "commonjs",
+        "esModuleInterop": true,
+        "resolveJsonModule": true,
+        "baseUrl": "./src",
+        "paths": {
+            "@core/*": [
+                "core/*"
+            ],
+            "@shared/*": [
+                "shared/*"
+            ],
+            "@modules/*": [
+                "modules/*"
+            ],
+            "@utils/*": [
+                "utils/*"
+            ],
+            "@fixtures/*": [
+                "fixtures/*"
+            ],
+            "@data/*": [
+                "data/*"
+            ]
+        }
+    }
+}

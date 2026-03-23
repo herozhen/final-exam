@@ -1,0 +1,58 @@
+[
+    {
+        "caseId": "BOOKING_LOGIN_01",
+        "description": "Booking 2 normal seats successfully",
+        "username": "5cfa633b-ccfb-4735-882a-38ff7c308b07",
+        "password": "Test123456@",
+        "remember": false,
+        "movie": {
+            "movie": "BỖNG DƯNG TRÚNG SỐ",
+            "cinema": "BHD Star Cineplex - Phạm Hùng",
+            "date": "29/03/2023 ~ 00:00",
+            "maLichChieu": 46421
+        },
+        "seats": [
+            142,
+            143
+        ],
+        "bookingCase": "LOGGED_SUCCESS",
+        "expectedType": "BOOKING_SUCCESS"
+    },
+    {
+        "caseId": "BOOKING_LOGIN_02",
+        "description": "Booking VIP seats",
+        "username": "5cfa633b-ccfb-4735-882a-38ff7c308b07",
+        "password": "Test123456@",
+        "remember": false,
+        "movie": {
+            "movie": "BỖNG DƯNG TRÚNG SỐ",
+            "cinema": "BHD Star Cineplex - Phạm Hùng",
+            "date": "29/03/2023 ~ 00:00",
+            "maLichChieu": 46421
+        },
+        "seats": [
+            122,
+            123
+        ],
+        "bookingCase": "LOGGED_SUCCESS",
+        "expectedType": "BOOKING_SUCCESS"
+    },
+    {
+        "caseId": "BOOKING_LOGIN_03",
+        "username": "5cfa633b-ccfb-4735-882a-38ff7c308b07",
+        "password": "Test123456@",
+        "remember": true,
+        "description": "Booking seat already taken",
+        "movie": {
+            "movie": "BỖNG DƯNG TRÚNG SỐ",
+            "cinema": "BHD Star Cineplex - Phạm Hùng",
+            "date": "29/03/2023 ~ 00:00",
+            "maLichChieu": 46421
+        },
+        "seats": [
+            36
+        ],
+        "bookingCase": "NO_SEATS_SEALECTED",
+        "expectedType": "SEAT_ALREADY_BOOKED"
+    }
+]

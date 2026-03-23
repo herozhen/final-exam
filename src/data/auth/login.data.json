@@ -1,0 +1,90 @@
+[
+    {
+        "caseId": "LOGIN_01",
+        "description": "Empty username and password",
+        "username": "",
+        "password": "",
+        "remember": false,
+        "expectedType": "VALIDATION_EMPTY_BOTH"
+    },
+    {
+        "caseId": "LOGIN_02",
+        "description": "Empty username",
+        "username": "",
+        "password": "Test123456@",
+        "remember": false,
+        "expectedType": "VALIDATION_EMPTY_USERNAME"
+    },
+    {
+        "caseId": "LOGIN_03",
+        "description": "Empty password",
+        "username": "5cfa633b-ccfb-4735-882a-38ff7c308b07",
+        "password": "",
+        "remember": false,
+        "expectedType": "VALIDATION_EMPTY_PASSWORD"
+    },
+    {
+        "caseId": "LOGIN_04",
+        "description": "Username contains only spaces",
+        "username": "   ",
+        "password": "Password123",
+        "remember": false,
+        "expectedType": "VALIDATION_ACCOUNT"
+    },
+    {
+        "caseId": "LOGIN_05",
+        "description": "Password contains only spaces",
+        "username": "5cfa633b-ccfb-4735-882a-38ff7c308b07",
+        "password": "           ",
+        "remember": false,
+        "expectedType": "VALIDATION_ACCOUNT"
+    },
+    {
+        "caseId": "LOGIN_06",
+        "description": "Invalid account",
+        "username": "5cfa633b-ccfb-4735-882a-38ff7c308b07",
+        "password": "Password123",
+        "remember": false,
+        "expectedType": "VALIDATION_ACCOUNT"
+    },
+    {
+        "caseId": "LOGIN_07",
+        "description": "Username with special characters",
+        "username": "@@@###",
+        "password": "Password123",
+        "remember": false,
+        "expectedType": "VALIDATION_ACCOUNT"
+    },
+    {
+        "caseId": "LOGIN_08",
+        "description": "Password too short",
+        "username": "5cfa633b-ccfb-4735-882a-38ff7c308b07",
+        "password": "123",
+        "remember": false,
+        "expectedType": "VALIDATION_MIN_LENGTH_PASSWORD"
+    },
+    {
+        "caseId": "LOGIN_09",
+        "description": "Valid username and password",
+        "username": "5cfa633b-ccfb-4735-882a-38ff7c308b07",
+        "password": "Test123456@",
+        "remember": false,
+        "expectedType": "LOGIN_SUCCESS"
+    },
+    {
+        "caseId": "LOGIN_10",
+        "description": "Valid login with remember account",
+        "username": "5cfa633b-ccfb-4735-882a-38ff7c308b07",
+        "password": "Test123456@",
+        "remember": true,
+        "expectedType": "LOGIN_SUCCESS"
+    },
+    {
+        "caseId": "LOGIN_11",
+        "description": "Wrong password",
+        "username": "5cfa633b-ccfb-4735-882a-38ff7c308b07",
+        "password": "WrongPassword",
+        "remember": false,
+        "expectedType": "VALIDATION_ACCOUNT"
+    }
+]
